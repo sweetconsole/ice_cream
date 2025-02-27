@@ -1,0 +1,50 @@
+
+<div class="popup popup__buy_now" id="popUpBuyNow">
+    <p class="popup__title popup__buy_now_title">Buy Now</p>
+
+    <div class="popup__buy_now_products">
+        <div class="popup__buy_now_product">
+            <div class="popup__buy_now_product_block_image">
+                <img class="popup__buy_now_product_image" src="./image/product_icon_1.webp" alt="Image Ice Cream">
+                <div class="popup__buy_now_product_image_background popup__buy_now_product_image_background-green"></div>
+            </div>
+
+            <div class="popup__buy_now_product_block popup__buy_now_product_block-green" onclick="selectProduct('green', this)">
+                <p class="popup__buy_now_product_name">Ice Cream</p>
+            </div>
+        </div>
+
+        <div class="popup__buy_now_product">
+            <div class="popup__buy_now_product_block_image">
+                <img class="popup__buy_now_product_image" src="/image/product_icon_2.webp" alt="Image Ice Coffee">
+                <div class="popup__buy_now_product_image_background popup__buy_now_product_image_background-yellow"></div>
+            </div>
+
+            <div class="popup__buy_now_product_block popup__buy_now_product_block-yellow" onclick="selectProduct('yellow', this)">
+                <p class="popup__buy_now_product_name">Ice Coffee</p>
+            </div>
+        </div>
+
+        <div class="popup__buy_now_product">
+            <div class="popup__buy_now_product_block_image">
+                <img class="popup__buy_now_product_image" src="/image/product_icon_3.webp" alt="Image Milkshake">
+                <div class="popup__buy_now_product_image_background popup__buy_now_product_image_background-pink"></div>
+            </div>
+
+            <div class="popup__buy_now_product_block popup__buy_now_product_block-pink" onclick="selectProduct('pink', this)">
+                <p class="popup__buy_now_product_name">Milkshake</p>
+            </div>
+        </div>
+    </div>
+
+    <form class="popup__buy_now_form">
+        <input class="popup__input popup_buy_now_input" placeholder="Name" type="text" id="name">
+        <input class="popup__input popup_buy_now_input" placeholder="Phone" type="tel" id="phone">
+
+        <textarea class="popup__input popup__textarea" placeholder="Comment" type="text"></textarea>
+
+        <button class="popup__buy_now_button button__fill" type="submit">Submit</button>
+    </form>
+
+    <img class="popup__close" src="./image/close.svg" alt="Close" onclick="viewPopUp('buyNow')">
+</div>

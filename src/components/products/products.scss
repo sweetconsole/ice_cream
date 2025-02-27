@@ -1,0 +1,150 @@
+@use "../../style/variables";
+
+.products {
+    background-image: url("./image/background_1.webp");
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.product {
+
+    &:hover .product__info {
+        box-shadow: 0 0 30px 0 rgba(212, 20, 67, 0.15);
+    }
+}
+
+.products__content {
+
+}
+
+.products__content_top_heading {
+    color: variables.$color-text-dark;
+}
+
+.products__content_title {
+    color: variables.$color-text-dark;
+    margin-bottom: 300px;
+}
+
+.products__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.product__block_image {
+    width: 300px;
+    height: 300px;
+    top: -180px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.product__image_icon {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.product__image_background {
+    width: 300px;
+    height: 300px;
+    left: 0;
+    bottom: -17px;
+    z-index: 0;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.product__image_background-green {
+    background-color: #AEC6A5;
+    box-shadow: 0 0 30px 0 rgba(10, 136, 23, 0.25);
+}
+
+.product__image_background-yellow {
+    background-color: #EFD478;
+    box-shadow: 0 0 30px 0 rgba(152, 112, 23, 0.25);
+}
+
+.product__image_background-pink {
+    background-color: #D6936D;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
+}
+
+.product__info {
+    height: 535px;
+    border-radius: 24px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+.product__info-green {
+    background-color: #AEC6A5;
+}
+
+.product__info-yellow {
+    background-color: #EFD478;
+}
+
+.product__info-pink {
+    background-color: #D6936D;
+}
+
+.product__info_name {
+    color: variables.$color-text-dark;
+    font-weight: variables.$bold;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 165px;
+}
+
+.product__info_description {
+    color: variables.$color-text-dark;
+    font-weight: variables.$regular;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 2px;
+    margin-top: 60px;
+}
+
+.product__info_link {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 55px;
+
+    &:active {
+        bottom: 53px;
+    }
+}
+
+.product__info_link_icon {
+    width: 40px;
+    height: 16px;
+
+    &:hover {
+        width: 50px;
+        height: 16px;
+    }
+
+    &:active {
+        height: 19px;
+    }
+}

@@ -1,0 +1,19 @@
+@use "../../style/variables";
+
+.popup__how {
+    width: 568px;
+    height: 476px;
+}
+
+.popup__how_title {
+    margin-bottom: 32px;
+}
+
+.popup__how_video {
+    border-radius: 12px;
+}
+
+.popup__how_description {
+    width: 360px;
+    margin-top: 32px;
+}

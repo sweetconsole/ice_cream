@@ -1,0 +1,49 @@
+
+
+<div class="popup popup__products" id="popUpProduct">
+    <p class="popup__title popup__products_title" id="popUpProductName"></p>
+
+    <div class="popup__products_image_block">
+        <img class="popup__products_image" id="popUpProductImage" src="./image/product_icon_1.webp" alt="Product Image" loading="lazy">
+        <div class="popup__products_image_background popup__products_image_background-green" id="popUpImageBackground"></div>
+    </div>
+
+    <ul class="popup__products_nutritional_values" id="popUpProductNutritionalValues">
+        <li class="popup__product_nutritional_value popup__product_nutritional_value-green">
+            <div class="popup__product_nutritional_value_count popup__products_background-green" id="popUpProductKCal">320</div>
+            <p class="popup__product_nutritional_value_name">Kcal</p>
+        </li>
+        <li class="popup__product_nutritional_value">
+            <div class="popup__product_nutritional_value_count popup__products_background-green" id="popUpProductProtein">320</div>
+            <p class="popup__product_nutritional_value_name">Protein</p>
+        </li>
+        <li class="popup__product_nutritional_value">
+            <div class="popup__product_nutritional_value_count popup__products_background-green" id="popUpProductFats">320</div>
+            <p class="popup__product_nutritional_value_name">Fats</p>
+        </li>
+        <li class="popup__product_nutritional_value">
+            <div class="popup__product_nutritional_value_count popup__products_background-green" id="popUpProductCarbs">320</div>
+            <p class="popup__product_nutritional_value_name">Carbs</p>
+        </li>
+    </ul>
+
+    <p class="popup__products_ingredients_title">Ingredients</p>
+
+    <ul class="popup__products_ingredients" id="popUpProductIngredients">
+        <li class="popup__products_ingredient">
+            <p class="popup__products_ingredient_text">Error</p>
+            <p class="popup__products_ingredient_text">Error</p>
+        </li>
+    </ul>
+
+    <form class="popup__buy_now_form">
+        <input class="popup__input popup_buy_now_input" placeholder="Name" type="text" id="name">
+        <input class="popup__input popup_buy_now_input" placeholder="Phone" type="tel" id="phone">
+
+        <textarea class="popup__input popup__textarea" placeholder="Comment" type="text"></textarea>
+
+        <button class="popup__buy_now_button button__fill" type="submit">Submit</button>
+    </form>
+
+    <img class="popup__close" src="./image/close.svg" alt="Close" onclick="viewPopUp('buyProduct')">
+</div>

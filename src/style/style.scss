@@ -1,0 +1,128 @@
+@use "variables";
+
+:root {
+    color-scheme: only light;
+}
+
+*::selection {
+    background-color: #D6936D;
+    color: variables.$color-text-light;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: variables.$font-family-1, serif;
+    font-weight: 400;
+    position: relative;
+    background-color: #84A178;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+body::-webkit-scrollbar-track {
+    background: #84A178;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: variables.$color-accent-1;
+    border-radius: 20px;
+    border: 3px solid #84A178;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+@keyframes rotate {
+    from {
+        rotate: none;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.top_heading {
+    font-weight: variables.$extra-bold;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.title {
+    font-family: variables.$font-family-2, serif;
+    font-weight: variables.$regular;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.button__fill {
+    width: 152px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: variables.$semi-bold;
+    color: variables.$color-text-dark;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+    border-radius: 10px;
+    background-color: variables.$color-accent-1;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        color: variables.$color-text-light;
+        background-color: variables.$color-accent-2;
+    }
+
+    &:active {
+        color: variables.$color-text-dark;
+    }
+}
+
+.button__fill_arrow {
+    margin-left: 7px;
+}
+
+.button__border {
+    width: 152px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: variables.$semi-bold;
+    color: variables.$color-accent-1;
+    font-size: 14px;
+    line-height: 17px;
+    border: 3px solid variables.$color-accent-1;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        color: variables.$color-accent-2;
+        border: 3px solid variables.$color-accent-2;
+    }
+
+    &:active {
+        color: variables.$color-text-light;
+        border: 3px solid variables.$color-text-light;
+    }
+}

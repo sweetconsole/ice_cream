@@ -1,0 +1,30 @@
+@use "../../style/variables";
+
+.popup__franchise {
+    width: 568px;
+    height: 668px;
+}
+
+.popup__franchise_title {
+    width: 322px;
+    margin-bottom: 24px;
+}
+
+.popup__franchise_description {
+    width: 450px;
+    margin-bottom: 32px;
+}
+
+.popup__franchise_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.popup__franchise_input {
+    margin-bottom: 16px;
+}
+
+.popup__franchise_button {
+    margin: 16px auto 0;
+}

@@ -1,0 +1,26 @@
+@use "../../style/variables";
+
+.popup__locations {
+    width: 568px;
+    height: 458px;
+}
+
+.popup__locations_title {
+    margin-bottom: 32px;
+}
+
+.popup__locations_map {
+    width: 448px;
+    height: 260px;
+    border-radius: 10px;
+    border: none;
+
+    @media (max-width: 768px) {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+.popup__locations_button {
+    margin-top: 32px;
+}

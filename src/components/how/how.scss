@@ -1,0 +1,114 @@
+@use "../../style/variables";
+
+.how {
+    padding-top: 60px;
+    padding-bottom: 180px;
+}
+
+.how__top_heading {
+    color: variables.$color-text-light;
+}
+
+.how__content_title {
+    color: variables.$color-text-light;
+    margin-bottom: 80px;
+}
+
+.how__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.how__content_block_image {
+    width: 490px;
+    height: 490px;
+    position: relative;
+}
+
+.how__block_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 100%;
+}
+
+.how__block_image_background {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: -39px;
+    right: -8px;
+    z-index: 0;
+    border-radius: 100%;
+    background-color: #efd478;
+}
+
+.how__content_info {
+    width: 465px;
+    margin-right: 100px;
+}
+
+.how__content_info_text {
+    color: variables.$color-text-light;
+    font-weight: variables.$regular;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.how_button {
+    width: 165px;
+    margin-top: 42px;
+}
+
+.how__features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.how__feature {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.how__feature_icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: variables.$color-accent-1;
+    margin-bottom: 30px;
+}
+
+.how__feature_icon_image {
+    width: 36px;
+    height: 36px;
+    margin-top: 7px;
+}
+
+.how__feature_count {
+    color: variables.$color-text-light;
+    font-weight: variables.$bold;
+    font-size: 58px;
+    line-height: 71px;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.how__feature_description {
+    color: variables.$color-text-light;
+    font-weight: variables.$regular;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 1px;
+    text-align: center;
+}

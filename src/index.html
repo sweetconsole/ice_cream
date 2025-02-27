@@ -1,0 +1,24 @@
+@include("parts/start.html")
+
+    <div class="popup__background" id="popUpBackground">
+        @include("components/popup/locations.html")
+        @include("components/popup/franchise.html")
+        @include("components/popup/how.html")
+        @include("components/popup/buy_now.html")
+        @include("components/popup/product.html")
+    </div>
+
+    @include("components/header/header.html")
+
+
+    <main>
+        @include("components/intro/intro.html")
+        @include("components/products/products.html")
+        @include("components/how/how.html")
+        @include("components/comments/comments.html")
+        @include("components/locations/locations.html")
+    </main>
+
+    @include("components/footer/footer.html")
+
+@include("parts/end.html")

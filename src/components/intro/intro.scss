@@ -1,0 +1,156 @@
+@use "../../style/variables";
+
+.intro {
+    height: 614px;
+    position: relative;
+}
+
+.intro__container {
+    height: 100%;
+}
+
+.intro__content {
+    height: 100%;
+    position: relative;
+}
+
+.intro__title {
+    width: 370px;
+    font-family: variables.$font-family-2, serif;
+    color: variables.$color-text-light;
+    font-weight: variables.$regular;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.intro__links {
+    display: flex;
+    align-items: center;
+}
+
+.intro__links_link {
+    color: variables.$color-accent-1;
+    font-weight: variables.$semi-bold;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.intro__links_link_how {
+    position: relative;
+    margin-left: 40px;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        color: variables.$color-accent-2;
+    }
+
+    &:active {
+        color: variables.$color-text-light;
+    }
+
+    &::after {
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        content: "";
+        background: variables.$color-accent-1;
+        transition: all .2s ease-in-out;
+    }
+
+    &:hover::after {
+        background: variables.$color-accent-2;
+    }
+
+    &:active::after {
+        background: variables.$color-text-light;
+    }
+}
+
+.intro__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 65px;
+}
+
+.intro__description_image {
+    width: 225px;
+    height: 225px;
+    margin-right: 14px;
+    animation: rotate 15s linear infinite forwards;
+}
+
+.intro__description_block {
+    width: 180px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.intro__description_text {
+    color: variables.$color-text-light;
+    font-weight: variables.$regular;
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+
+.intro__description_link {
+    position: absolute;
+}
+
+.intro__description_arrow {
+
+    &:hover {
+        width: 51px;
+        height: 16px;
+    }
+}
+
+.intro__image {
+    width: 640px;
+    height: 664px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.intro__counts {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: 2;
+    text-align: end;
+}
+
+.intro__counts_number {
+    color: variables.$color-accent-1;
+    font-weight: variables.$black;
+    font-size: 36px;
+    line-height: 56px;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+}
+
+.intro__counts_name {
+    color: variables.$color-text-light;
+    font-weight: variables.$regular;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.intro__points {
+    width: 1200px;
+    height: 384px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+}

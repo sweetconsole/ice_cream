@@ -1,0 +1,62 @@
+@use "../../style/variables";
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    transition: all .5s ease-in-out;
+}
+
+.header__background {
+    background-color: #84A178;
+}
+
+.header__content {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo_link {
+    margin-bottom: 10px;
+}
+
+.header__logo {
+    width: 60px;
+    height: 65px;
+}
+
+.header__navigation {
+    width: 440px;
+}
+
+.header__navigation_list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.header__navigation_list_item {
+
+}
+
+.header__navigation_link {
+    font-weight: variables.$black;
+    color: variables.$color-text-light;
+    font-size: 16px;
+    line-height: 20px;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        color: variables.$color-accent-1;
+    }
+
+    &:active {
+        color: variables.$color-accent-2;
+    }
+}
