@@ -1,0 +1,78 @@
+@use "../../style/variables";
+
+.menu {
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    position: fixed;
+    display: none;
+    background-color: #85A279;
+}
+
+.menu-active {
+    display: block;
+}
+
+
+.menu__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.menu_logo {
+    width: 40px;
+    height: 45px;
+}
+
+.menu__close {
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.menu__close_icon {
+    width: 100%;
+    height: 100%;
+}
+
+.menu__links {
+    margin-top: 70px;
+}
+
+.menu__navigation_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.menu__navigation_list_item {
+    margin-bottom: 32px;
+}
+
+.menu__navigation_link {
+    font-weight: variables.$bold;
+    color: variables.$color-text-light;
+    font-size: 32px;
+    line-height: 39px;
+
+    &:hover {
+        color: variables.$color-accent-1;
+    }
+
+    &:active {
+        color: variables.$color-accent-1;
+    }
+}
+
+.menu__button {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}

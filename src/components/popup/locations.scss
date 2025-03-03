@@ -3,10 +3,19 @@
 .popup__locations {
     width: 568px;
     height: 458px;
+
+    @media (max-width: 704px) {
+        width: 280px;
+        height: 365px;
+    }
 }
 
 .popup__locations_title {
     margin-bottom: 32px;
+
+    @media (max-width: 704px) {
+        margin-bottom: 20px;
+    }
 }
 
 .popup__locations_map {
@@ -15,12 +24,16 @@
     border-radius: 10px;
     border: none;
 
-    @media (max-width: 768px) {
-        width: 250px;
+    @media (max-width: 704px) {
+        width: 224px;
         height: 200px;
     }
 }
 
 .popup__locations_button {
     margin-top: 32px;
+
+    @media (max-width: 704px) {
+        margin-top: 20px;
+    }
 }

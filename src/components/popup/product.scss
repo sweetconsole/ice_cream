@@ -4,15 +4,29 @@
     width: 568px;
     height: 995px;
     margin-top: 100px;
+    
+    @media (max-width: 704px) {
+        width: 280px;
+        height: 990px;
+        margin-top: 200px;
+    }
 }
 
 .popup__products_title {
     margin-bottom: 32px;
+
+    @media (max-width: 704px) {
+        margin-bottom: 20px;
+    }
 }
 
 .popup__products_image_block {
     position: relative;
     margin-bottom: 32px;
+
+    @media (max-width: 704px) {
+        margin-bottom: 20px;
+    }
 }
 
 .popup__products_image {
@@ -54,6 +68,11 @@
     align-items: center;
     list-style: none;
     margin-bottom: 48px;
+
+    @media (max-width: 704px) {
+        width: 240px;
+        margin-bottom: 40px;
+    }
 }
 
 .popup__product_nutritional_value {
@@ -62,6 +81,11 @@
     border-radius: 40px;
     border: 2px solid #9CBE8F;
     position: relative;
+
+    @media (max-width: 704px) {
+        width: 53px;
+        height: 72px;
+    }
 }
 
 .popup__product_nutritional_value-green {
@@ -93,6 +117,13 @@
     color: variables.$color-text-dark;
     font-size: 14px;
     line-height: 28px;
+
+    @media (max-width: 704px) {
+        width: 43px;
+        height: 43px;
+        font-size: 10px;
+        line-height: 28px;
+    }
 }
 
 .popup__product_nutritional_value_name {
@@ -104,6 +135,12 @@
     bottom: 12px;
     left: 50%;
     transform: translateX(-50%);
+
+    @media (max-width: 704px) {
+        font-size: 10px;
+        line-height: 12px;
+        bottom: 8px;
+    }
 }
 
 .popup__products_ingredients_title {
@@ -125,6 +162,10 @@
     justify-content: space-between;
     align-content: center;
     margin-bottom: 12px;
+
+    @media (max-width: 704px) {
+        width: 240px;
+    }
 }
 
 .popup__products_ingredient_text {

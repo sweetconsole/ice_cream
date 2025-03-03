@@ -3,16 +3,31 @@
 .popup__franchise {
     width: 568px;
     height: 668px;
+
+    @media (max-width: 704px) {
+        width: 280px;
+        height: 674px;
+    }
 }
 
 .popup__franchise_title {
     width: 322px;
     margin-bottom: 24px;
+
+    @media (max-width: 704px) {
+        width: 222px;
+        margin-bottom: 20px;
+    }
 }
 
 .popup__franchise_description {
     width: 450px;
     margin-bottom: 32px;
+
+    @media (max-width: 704px) {
+        width: 222px;
+        margin-bottom: 20px;
+    }
 }
 
 .popup__franchise_form {
@@ -23,8 +38,16 @@
 
 .popup__franchise_input {
     margin-bottom: 16px;
+
+    @media (max-width: 704px) {
+        margin-bottom: 12px;
+    }
 }
 
 .popup__franchise_button {
     margin: 16px auto 0;
+
+    @media (max-width: 704px) {
+        margin: 24px auto 0;
+    }
 }

@@ -3,17 +3,39 @@
 .popup__how {
     width: 568px;
     height: 476px;
+
+    @media (max-width: 704px) {
+        width: 280px;
+        height: 400px;
+    }
 }
 
 .popup__how_title {
     margin-bottom: 32px;
+
+    @media (max-width: 704px) {
+        margin-bottom: 20px;
+    }
 }
 
 .popup__how_video {
+    width: 360px;
+    height: 200px;
     border-radius: 12px;
+
+    @media (max-width: 704px) {
+        width: 225px;
+        height: 125px;
+        border-radius: 12px;
+    }
 }
 
 .popup__how_description {
     width: 360px;
     margin-top: 32px;
+
+    @media (max-width: 704px) {
+        width: 225px;
+        margin-top: 20px;
+    }
 }

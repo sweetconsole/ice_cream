@@ -27,10 +27,38 @@
 .header__logo {
     width: 60px;
     height: 65px;
+
+    @media (max-width: 704px) {
+        width: 40px;
+        height: 45px;
+    }
 }
 
 .header__navigation {
     width: 440px;
+
+    @media (max-width: 1170px) {
+        width: 400px;
+    }
+
+    @media (max-width: 704px) {
+        display: none;
+    }
+}
+
+.header__burger {
+    border: none;
+    background-color: transparent;
+    display: none;
+
+    @media (max-width: 704px) {
+        display: block;
+    }
+}
+
+.header__burger_icon {
+    width: 32px;
+    height: 32px;
 }
 
 .header__navigation_list {
@@ -39,6 +67,17 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
+
+    @media (max-width: 1170px) {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+.header__button {
+    @media (max-width: 704px) {
+        display: none;
+    }
 }
 
 .header__navigation_list_item {
@@ -51,6 +90,12 @@
     font-size: 16px;
     line-height: 20px;
     transition: all .2s ease-in-out;
+
+
+    @media (max-width: 1170px) {
+        font-size: 14px;
+        line-height: 17px;
+    }
 
     &:hover {
         color: variables.$color-accent-1;

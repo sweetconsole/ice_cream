@@ -7,6 +7,14 @@
 .locations__block {
     position: relative;
     padding-top: 516px;
+
+    @media (max-width: 1170px) {
+        padding-top: 466px;
+    }
+
+    @media (max-width: 704px) {
+        padding-top: 1140px;
+    }
 }
 
 .locations__list {
@@ -19,6 +27,11 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
+
+    @media (max-width: 704px) {
+        flex-direction: column;
+        top: -346px;
+    }
 }
 
 .location {
@@ -40,6 +53,18 @@
         transform: scale(1.05);
         box-shadow: 0 0 30px 0 rgba(212, 20, 67, 0.1);
     }
+
+    @media (max-width: 1170px) {
+        width: 224px;
+        padding: 24px;
+        border-radius: 18px;
+        font-size: 14px;
+    }
+
+    @media (max-width: 704px) {
+        width: 280px;
+        margin-bottom: 30px;
+    }
 }
 
 .location__line {
@@ -48,6 +73,12 @@
     background-color: #CF7575;
     margin-top: 32px;
     margin-bottom: 32px;
+
+    @media (max-width: 1170px) {
+        background-color: #E1E1E1;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
 }
 
 .location__type {
@@ -59,7 +90,16 @@
     text-transform: uppercase;
     margin-bottom: 30px;
     border-radius: 6px;
+    letter-spacing: .04em;
     background-color: variables.$color-accent-1;
+
+    @media (max-width: 704px) {
+        width: 80px;
+        height: 16px;
+        font-size: 12px;
+        line-height: 186%;
+        border-radius: 4px;
+    }
 }
 
 .location__type-food-truck {
@@ -88,6 +128,10 @@
     color: #ABABAB;
     letter-spacing: 0;
     margin-bottom: 12px;
+
+    @media (max-width: 1170px) {
+        color: #907E82;
+    }
 }
 
 .locations__buttons {
@@ -95,8 +139,23 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto 113px;
+
+    @media (max-width: 704px) {
+        width: 196px;
+        flex-direction: column;
+        margin: 0 auto 113px;
+    }
 }
 
 .locations__button {
     width: 196px;
+
+    @media (max-width: 704px) {
+        &:nth-child(1) {
+            margin-bottom: 16px;
+        }
+
+    }
+
+
 }

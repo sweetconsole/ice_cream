@@ -50,16 +50,33 @@ button {
     max-width: 1170px;
     position: relative;
     margin: 0 auto;
+    
+    @media (max-width: 1170px) {
+        max-width: 704px;
+    }
+
+    @media (max-width: 704px) {
+        max-width: 280px;
+    }
 }
 
 .top_heading {
     font-weight: variables.$extra-bold;
     font-size: 30px;
     line-height: 37px;
-    letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 12px;
+
+    @media (max-width: 1170px) {
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    @media (max-width: 704px) {
+        font-size: 18px;
+        line-height: 23px;
+    }
 }
 
 .title {
@@ -67,9 +84,19 @@ button {
     font-weight: variables.$regular;
     font-size: 36px;
     line-height: 43px;
-    letter-spacing: 3px;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     text-align: center;
+
+    @media (max-width: 1170px) {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    @media (max-width: 704px) {
+        font-size: 24px;
+        line-height: 14px;
+    }
 }
 
 .button__fill {
@@ -94,6 +121,12 @@ button {
 
     &:active {
         color: variables.$color-text-dark;
+    }
+
+
+    @media (max-width: 1170px) {
+        font-size: 14px;
+        line-height: 17px;
     }
 }
 
