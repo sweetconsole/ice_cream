@@ -23,7 +23,7 @@
 
     <a class="popup__locations_button button__fill" href="https://yandex.ru/maps/?um=constructor%3A310843fb4ead85e8f9ad69b2a3ab072582fc8600fc91447f989442a8e1226c40&source=constructorLink" target="_blank">Open map</a>
 
-    <img class="popup__close" src="./image/close.svg" alt="Close" onclick="viewPopUp('locations')">
+    <img class="popup__close" src="./image/close.svg" alt="Close" onclick="viewPopUp('locations')" loading="lazy">
 </div>
         
 <div class="popup popup__franchise" id="popUpFranchise">
@@ -40,20 +40,20 @@
         <button class="popup__franchise_button button__fill" type="submit">Submit</button>
     </form>
 
-    <img class="popup__close" src="./image/close.svg" alt="Close" onclick="viewPopUp('franchise')">
+    <img class="popup__close" src="./image/close.svg" alt="Close" onclick="viewPopUp('franchise')" loading="lazy">
 </div>
         
 <div class="popup popup__how" id="popUpHow">
     <p class="popup__title popup__how_title">How it’s made?</p>
 
-    <video class="popup__how_video" id="popUpHowVideo" width="360" height="200" controls>
+    <video class="popup__how_video" id="popUpHowVideo" controls>
         <source src="./video/video.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
     <p class="popup__description popup__how_description">Ice cream production goes through key stages: collecting ingredients, mixing, pasteurization, homogenization, air freezing, adding fillers, quenching, packaging, storage at -18°C and delivery in refrigerated trucks.</p>
 
-    <img class="popup__close" src="./image/close.svg" alt="Close" onclick="viewPopUp('how')">
+    <img class="popup__close" src="./image/close.svg" alt="Close" onclick="viewPopUp('how')" loading="lazy">
 </div>
         
 <div class="popup popup__buy_now" id="popUpBuyNow">
@@ -62,7 +62,7 @@
     <div class="popup__buy_now_products">
         <div class="popup__buy_now_product">
             <div class="popup__buy_now_product_block_image">
-                <img class="popup__buy_now_product_image" src="./image/product_icon_1.webp" alt="Image Ice Cream">
+                <img class="popup__buy_now_product_image" src="./image/product_icon_1.webp" alt="Image Ice Cream" loading="lazy">
                 <div class="popup__buy_now_product_image_background popup__buy_now_product_image_background-green"></div>
             </div>
 
@@ -73,7 +73,7 @@
 
         <div class="popup__buy_now_product">
             <div class="popup__buy_now_product_block_image">
-                <img class="popup__buy_now_product_image" src="./image/product_icon_2.webp" alt="Image Ice Coffee">
+                <img class="popup__buy_now_product_image" src="./image/product_icon_2.webp" alt="Image Ice Coffee" loading="lazy">
                 <div class="popup__buy_now_product_image_background popup__buy_now_product_image_background-yellow"></div>
             </div>
 
@@ -84,7 +84,7 @@
 
         <div class="popup__buy_now_product">
             <div class="popup__buy_now_product_block_image">
-                <img class="popup__buy_now_product_image" src="./image/product_icon_3.webp" alt="Image Milkshake">
+                <img class="popup__buy_now_product_image" src="./image/product_icon_3.webp" alt="Image Milkshake" loading="lazy">
                 <div class="popup__buy_now_product_image_background popup__buy_now_product_image_background-pink"></div>
             </div>
 
@@ -103,7 +103,7 @@
         <button class="popup__buy_now_button button__fill" type="submit">Submit</button>
     </form>
 
-    <img class="popup__close" src="./image/close.svg" alt="Close" onclick="viewPopUp('buyNow')">
+    <img class="popup__close" src="./image/close.svg" alt="Close" onclick="viewPopUp('buyNow')" loading="lazy">
 </div>
         
 
@@ -152,10 +152,46 @@
         <button class="popup__buy_now_button button__fill" type="submit">Submit</button>
     </form>
 
-    <img class="popup__close" src="./image/close.svg" alt="Close" onclick="viewPopUp('buyProduct')">
+    <img class="popup__close" src="./image/close.svg" alt="Close" onclick="viewPopUp('buyProduct')" loading="lazy">
 </div>
     </div>
 
+    
+<div class="menu" id="menu">
+    <div class="container">
+        <div class="menu__header">
+            <img class="menu_logo" src="./image/logo.svg" alt="Logo">
+
+            <button class="menu__close" onclick="viewMenu()">
+                <img class="menu__close_icon" src="./image/menu_close.svg" alt="Close">
+            </button>
+        </div>
+
+        <nav class="menu__links">
+            <ul class="menu__navigation_list">
+                <li class="menu__navigation_list_item">
+                    <a class="menu__navigation_link" href="#home">Home</a>
+                </li>
+                <li class="menu__navigation_list_item">
+                    <a class="menu__navigation_link" href="#how">How it’s made?</a>
+                </li>
+                <li class="menu__navigation_list_item">
+                    <a class="menu__navigation_link" href="#products">Our products</a>
+                </li>
+                <li class="menu__navigation_list_item">
+                    <a class="menu__navigation_link" href="#contant">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <button class="button__fill menu__button" onclick="viewPopUp('buyNow')">
+        Buy now
+        <svg class="button__fill_arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 2L8.95 6L4 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+</div>
     <header class="header" id="header">
     <div class="container">
         <div class="header__content">
@@ -180,7 +216,11 @@
                 </ul>
             </nav>
 
-            <button class="button__fill" onclick="viewPopUp('buyNow')">
+            <button class="header__burger" onclick="viewMenu()">
+                <img class="header__burger_icon" src="./image/burger.svg" alt="Menu">
+            </button>
+
+            <button class="button__fill header__button" onclick="viewPopUp('buyNow')">
                 Buy now
                 <svg class="button__fill_arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4 2L8.95 6L4 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -190,16 +230,15 @@
     </div>
 </header>
 
-
     <main>
         <section class="intro">
     <div class="intro__container container">
         <div class="intro__content">
-            <h1 class="intro__title">ice cream made with passion</h1>
+            <h1 class="intro__title">ice cream made with <span class="intro__title_highlighting">passion</span></h1>
 
             <div class="intro__links">
                 <a class="intro__links_link button__border" href="#products">Products</a>
-                <a class="intro__links_link intro__links_link_how" href="#how">How it’s made?</a>
+                <a class="intro__links_link_how" href="#how">How it’s made?</a>
             </div>
 
             <div class="intro__description">
@@ -321,7 +360,7 @@
                     <img class="how__feature_icon_image" src="./image/weight.svg" alt="Cow" loading="lazy">
                 </div>
                 <p class="how__feature_count">16kg</p>
-                <p class="how__feature_description">The available ingredients reduce production costs.</p>
+                <p class="how__feature_description">The available ingredients reduce unique production costs.</p>
             </div>
 
             <div class="how__feature">
@@ -329,7 +368,7 @@
                     <img class="how__feature_icon_image" src="./image/ice_cream.svg" alt="Cow" loading="lazy">
                 </div>
                 <p class="how__feature_count">84</p>
-                <p class="how__feature_description">The frozen state preserves the quality of the product and simplifies transportation.</p>
+                <p class="how__feature_description">Frozen state quality preserves of product and simplifies transportation.</p>
             </div>
         </div>
     </div>
@@ -338,7 +377,7 @@
     <div class="comments__image" id="commentsImage"></div>
 
     <div class="comment">
-        <img class="comment__photo" id="commentPhoto" src="./image/comments_author_1.webp" alt="Avatar Image">
+        <img class="comment__photo" id="commentPhoto" src="./image/comments_author_1.webp" alt="Avatar Image" loading="lazy">
 
         <div class="comment__block_text">
             <p class="comment__text" id="commentText">Every day we come to you with friends after classes in college. We love your ice cream and casual atmosphere!</p>
