@@ -3,6 +3,12 @@
 .popup__buy_now {
     width: 568px;
     height: 644px;
+    
+    @media (max-width: 704px) {
+        width: 280px;
+        height: 986px;
+        margin-top: 150px;
+    }
 }
 
 .popup__buy_now_title {
@@ -14,12 +20,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 704px) {
+        width: 132px;
+        flex-direction: column;
+    }
 }
 
 .popup__buy_now_product {
     width: 132px;
     height: 198px;
     position: relative;
+
+    @media (max-width: 704px) {
+        margin-bottom: 20px;
+    }
 }
 
 .popup__buy_now_product_block_image {
@@ -118,6 +133,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media (max-width: 704px) {
+        margin-top: 0;
+    }
 }
 
 .popup_buy_now_input {

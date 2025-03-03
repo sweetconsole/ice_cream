@@ -12,22 +12,22 @@
         <nav class="menu__links">
             <ul class="menu__navigation_list">
                 <li class="menu__navigation_list_item">
-                    <a class="menu__navigation_link" href="#home">Home</a>
+                    <a class="menu__navigation_link" href="#home" onclick="viewMenu()">Home</a>
                 </li>
                 <li class="menu__navigation_list_item">
-                    <a class="menu__navigation_link" href="#how">How it’s made?</a>
+                    <a class="menu__navigation_link" href="#how" onclick="viewMenu()">How it’s made?</a>
                 </li>
                 <li class="menu__navigation_list_item">
-                    <a class="menu__navigation_link" href="#products">Our products</a>
+                    <a class="menu__navigation_link" href="#products" onclick="viewMenu()">Our products</a>
                 </li>
                 <li class="menu__navigation_list_item">
-                    <a class="menu__navigation_link" href="#contant">Contact</a>
+                    <a class="menu__navigation_link" href="#contant" onclick="viewMenu()">Contact</a>
                 </li>
             </ul>
         </nav>
     </div>
 
-    <button class="button__fill menu__button" onclick="viewPopUp('buyNow')">
+    <button class="button__fill menu__button" onclick="viewPopUp('buyNow'); viewMenu()">
         Buy now
         <svg class="button__fill_arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4 2L8.95 6L4 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
