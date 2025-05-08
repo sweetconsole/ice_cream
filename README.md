@@ -29,7 +29,3 @@ npm install
 ```
 gulp server
 ```
-
-## Внешний вид верстки сайта
-
-<img src="https://i.ibb.co/VcbtStxr/sweetconsole-github-io-ice-cream-dist-1.png" alt="Изобржанение вертски сайта" />
