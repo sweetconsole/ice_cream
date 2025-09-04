@@ -13,6 +13,9 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" width="30" height="30" alt="npm" />
 </div>
 
+## Превью сайта
+<img src="./screenshot.png" alt="Ошибка загрузки">
+
 ## Запуск проекта
 
 Для запуска проекта необходимо выполнить следующие действия:
