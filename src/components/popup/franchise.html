@@ -1,17 +1,50 @@
-
 <div class="popup popup__franchise" id="popUpFranchise">
-    <p class="popup__title popup__franchise_title">Thank you for your interest in owning an Ice Cream shop</p>
-    <p class="popup__description popup__franchise_description">Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.</p>
+	<p class="popup__title popup__franchise_title">
+		Спасибо, что хотите открыть наше кафе!
+	</p>
 
-    <form class="popup__franchise_form">
-        <input class="popup__input popup__franchise_input" placeholder="Name" type="text" name="name">
-        <input class="popup__input popup__franchise_input" placeholder="Phone" type="tel" name="phone">
-        <input class="popup__input popup__franchise_input" placeholder="Email" type="email" name="email">
+	<p class="popup__description popup__franchise_description">
+		В связи с большим количеством заявок мы временно не принимаем новых
+		партнёров. Как только набор возобновится, мы свяжемся с вами для уточнения
+		деталей. Пожалуйста, оставьте свои контакты ниже — и мы сообщим, когда
+		франшиза снова станет доступна. Спасибо за понимание.
+	</p>
 
-        <textarea class="popup__input popup__textarea" placeholder="Comment"></textarea>
+	<form class="popup__franchise_form">
+		<input
+			class="popup__input popup__franchise_input"
+			placeholder="Ваше имя"
+			type="text"
+			name="name"
+		/>
+		<input
+			class="popup__input popup__franchise_input"
+			placeholder="Ваш номер телефона"
+			type="tel"
+			name="phone"
+		/>
+		<input
+			class="popup__input popup__franchise_input"
+			placeholder="Ваша электронная почта"
+			type="email"
+			name="email"
+		/>
 
-        <button class="popup__franchise_button button__fill" type="submit">Submit</button>
-    </form>
+		<textarea
+			class="popup__input popup__textarea"
+			placeholder="Пожелания"
+		></textarea>
 
-    <img class="popup__close" src="./image/close.svg" alt="Close" onclick="viewPopUp('franchise')" loading="lazy">
+		<button class="popup__franchise_button button__fill" type="submit">
+			Отправить
+		</button>
+	</form>
+
+	<img
+		class="popup__close"
+		src="./image/close.svg"
+		alt="Close"
+		onclick="viewPopUp('franchise')"
+		loading="lazy"
+	/>
 </div>

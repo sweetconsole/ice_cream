@@ -5,29 +5,31 @@
 }
 
 *::selection {
-    background-color: #D6936D;
     color: variables.$color-text-light;
+    background-color: #D6936D;
 }
 
 body {
+    position: relative;
     width: 100%;
     height: 100%;
     font-family: variables.$font-family-1, serif;
     font-weight: 400;
-    position: relative;
     background-color: #84A178;
 }
 
 body::-webkit-scrollbar {
     width: 12px;
 }
+
 body::-webkit-scrollbar-track {
     background: #84A178;
 }
+
 body::-webkit-scrollbar-thumb {
     background-color: variables.$color-accent-1;
-    border-radius: 20px;
     border: 3px solid #84A178;
+    border-radius: 20px;
 }
 
 a,
@@ -46,34 +48,34 @@ button {
 }
 
 .container {
+    position: relative;
     width: 100%;
     max-width: 1170px;
-    position: relative;
     margin: 0 auto;
     
-    @media (max-width: 1170px) {
+    @media (width <= 1170px) {
         max-width: 704px;
     }
 
-    @media (max-width: 704px) {
+    @media (width <= 704px) {
         max-width: 280px;
     }
 }
 
 .top_heading {
-    font-weight: variables.$extra-bold;
-    font-size: 30px;
-    line-height: 37px;
-    text-transform: uppercase;
-    text-align: center;
     margin-bottom: 12px;
+    font-size: 30px;
+    font-weight: variables.$extra-bold;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
 
-    @media (max-width: 1170px) {
+    @media (width <= 1170px) {
         font-size: 22px;
         line-height: 27px;
     }
 
-    @media (max-width: 704px) {
+    @media (width <= 704px) {
         font-size: 18px;
         line-height: 23px;
     }
@@ -81,37 +83,37 @@ button {
 
 .title {
     font-family: variables.$font-family-2, serif;
-    font-weight: variables.$regular;
     font-size: 36px;
+    font-weight: variables.$regular;
     line-height: 43px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
 
-    @media (max-width: 1170px) {
+    @media (width <= 1170px) {
         font-size: 34px;
         line-height: 40px;
     }
 
-    @media (max-width: 704px) {
+    @media (width <= 704px) {
         font-size: 24px;
         line-height: 14px;
     }
 }
 
 .button__fill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 152px;
     height: 42px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: variables.$semi-bold;
-    color: variables.$color-text-dark;
     font-size: 14px;
+    font-weight: variables.$semi-bold;
     line-height: 17px;
+    color: variables.$color-text-dark;
+    background-color: variables.$color-accent-1;
     border: none;
     border-radius: 10px;
-    background-color: variables.$color-accent-1;
     transition: all .3s ease-in-out;
 
     &:hover {
@@ -124,7 +126,7 @@ button {
     }
 
 
-    @media (max-width: 1170px) {
+    @media (width <= 1170px) {
         font-size: 14px;
         line-height: 17px;
     }
@@ -135,27 +137,29 @@ button {
 }
 
 .button__border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 152px;
     height: 42px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: variables.$semi-bold;
-    color: variables.$color-accent-1;
     font-size: 14px;
+    font-weight: variables.$semi-bold;
     line-height: 17px;
+    color: variables.$color-accent-1;
+    background-color: transparent;
     border: 3px solid variables.$color-accent-1;
     border-radius: 10px;
-    background-color: transparent;
     transition: all .3s ease-in-out;
 
     &:hover {
-        color: variables.$color-accent-2;
+        color: variables.$color-text-light;
+        background-color: variables.$color-accent-2;
         border: 3px solid variables.$color-accent-2;
     }
 
     &:active {
         color: variables.$color-text-light;
+        background-color: transparent;
         border: 3px solid variables.$color-text-light;
     }
 }

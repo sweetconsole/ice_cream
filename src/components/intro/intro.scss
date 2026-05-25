@@ -1,14 +1,14 @@
 @use "../../style/variables";
 
 .intro {
-    height: 614px;
     position: relative;
+    height: 614px;
 
-    @media (max-width: 1170px) {
+    @media (width <= 1170px) {
         height: 370px;
     }
 
-    @media (max-width: 704px) {
+    @media (width <= 704px) {
         height: 430px;
     }
 }
@@ -18,35 +18,37 @@
 }
 
 .intro__content {
-    height: 100%;
     position: relative;
+    height: 100%;
 }
 
 .intro__title {
     width: 370px;
-    font-family: variables.$font-family-2, serif;
-    color: variables.$color-text-light;
-    font-weight: variables.$regular;
-    font-size: 36px;
-    text-transform: uppercase;
     margin-top: 40px;
     margin-bottom: 30px;
+    font-family: variables.$font-family-2, serif;
+    font-size: 36px;
+    font-weight: variables.$regular;
+    color: variables.$color-text-light;
+    text-transform: uppercase;
 
-    @media (max-width: 1170px) {
+    @media (width <= 1170px) {
         width: 170px;
-        font-size: 18px;
         margin-bottom: 21px;
+        font-size: 18px;
     }
 
-    @media (max-width: 704px) {
+    @media (width <= 704px) {
         width: 100%;
-        font-size: 26px;
         margin-bottom: 32px;
+        font-size: 26px;
     }
 }
 
 .intro__title_highlighting {
-    @media (max-width: 704px) {
+    color: variables.$color-accent-1;
+
+    @media (width <= 704px) {
         font-size: 36px;
         line-height: 97%;
     }
@@ -54,35 +56,36 @@
 
 .intro__links {
     display: flex;
+    gap: 16px;
     align-items: center;
 }
 
 .intro__links_link {
-    color: variables.$color-accent-1;
-    font-weight: variables.$semi-bold;
     font-size: 14px;
+    font-weight: variables.$semi-bold;
     line-height: 18px;
+    color: variables.$color-accent-1;
 
-    @media (max-width: 1170px) {
+    @media (width <= 1170px) {
         width: 62px;
         height: 24px;
         font-size: 8px;
         line-height: 10px;
-        border-radius: 8px;
-        border: 2px solid variables.$color-accent-1
+        border: 2px solid variables.$color-accent-1;
+        border-radius: 8px
     }
 }
 
 .intro__links_link_how {
-    color: variables.$color-accent-1;
-    font-weight: variables.$semi-bold;
-    font-size: 14px;
-    line-height: 18px;
     position: relative;
     margin-left: 10px;
+    font-size: 14px;
+    font-weight: variables.$semi-bold;
+    line-height: 18px;
+    color: variables.$color-accent-1;
     transition: all .2s ease-in-out;
 
-    @media (max-width: 1170px) {
+    @media (width <= 1170px) {
         width: auto;
         height: 24px;
         font-size: 8px;
@@ -97,19 +100,19 @@
     }
 
     &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
         width: 100%;
         height: 2px;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        display: block;
         content: "";
         background: variables.$color-accent-1;
         transition: all .2s ease-in-out;
 
-        @media (max-width: 1170px) {
-            height: 1px;
+        @media (width <= 1170px) {
             bottom: 8px;
+            height: 1px;
         }
     }
 
@@ -123,14 +126,14 @@
 }
 
 .intro__description {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: absolute;
-    left: 0;
     bottom: 65px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    @media (max-width: 704px) {
+    @media (width <= 704px) {
         display: none;
     }
 }
@@ -141,7 +144,7 @@
     margin-right: 14px;
     animation: rotate 15s linear infinite forwards;
 
-    @media (max-width: 1170px) {
+    @media (width <= 1170px) {
         width: 152px;
         height: 152px;
         margin-right: 8px;
@@ -149,26 +152,26 @@
 }
 
 .intro__description_block {
-    width: 180px;
     position: relative;
+    width: 180px;
     margin-top: 20px;
 
-    @media (max-width: 1170px) {
+    @media (width <= 1170px) {
         width: 150px;
         margin-top: 0;
     }
 }
 
 .intro__description_text {
-    color: variables.$color-text-light;
-    font-weight: variables.$regular;
-    font-size: 14px;
-    line-height: 140%;
     margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: variables.$regular;
+    line-height: 140%;
+    color: variables.$color-text-light;
 
-    @media (max-width: 1170px) {
-        font-size: 12px;
+    @media (width <= 1170px) {
         margin-bottom: 16px;
+        font-size: 12px;
     }
 }
 
@@ -192,18 +195,18 @@
 }
 
 .intro__image {
-    width: 640px;
-    height: 664px;
     position: absolute;
     right: 0;
     bottom: 0;
+    width: 640px;
+    height: 664px;
 
-    @media (max-width: 1170px) {
+    @media (width <= 1170px) {
         width: 379px;
         height: 398px;
     }
 
-    @media (max-width: 704px) {
+    @media (width <= 704px) {
         width: 276px;
         height: 273px;
     }
@@ -216,56 +219,56 @@
     z-index: 2;
     text-align: end;
 
-    @media (max-width: 1170px) {
+    @media (width <= 1170px) {
         top: 0;
     }
 
-    @media (max-width: 704px) {
+    @media (width <= 704px) {
         display: none;
     }
 }
 
 .intro__counts_number {
-    color: variables.$color-accent-1;
-    font-weight: variables.$black;
-    font-size: 36px;
-    line-height: 56px;
-    letter-spacing: .02em;
     margin-bottom: 4px;
+    font-size: 36px;
+    font-weight: variables.$black;
+    line-height: 56px;
+    color: variables.$color-accent-1;
+    letter-spacing: .02em;
 
-    @media (max-width: 1170px) {
+    @media (width <= 1170px) {
         font-size: 28px;
         line-height: 34px;
     }
 }
 
 .intro__counts_name {
-    color: variables.$color-text-light;
-    font-weight: variables.$regular;
     font-size: 14px;
+    font-weight: variables.$regular;
     line-height: 17px;
+    color: variables.$color-text-light;
 
-    @media (max-width: 1170px) {
+    @media (width <= 1170px) {
         font-size: 8px;
         line-height: 10px;
     }
 }
 
 .intro__points {
-    width: 1200px;
-    height: 384px;
     position: absolute;
     bottom: 0;
     left: 50%;
     z-index: -1;
+    width: 1200px;
+    height: 384px;
     transform: translateX(-50%);
 
-    @media (max-width: 1170px) {
+    @media (width <= 1170px) {
         width: 704px;
         height: auto;
     }
 
-    @media (max-width: 704px) {
+    @media (width <= 704px) {
         width: 328px;
         height: auto;
     }

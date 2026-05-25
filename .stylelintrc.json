@@ -1,0 +1,17 @@
+{
+	"extends": [
+		"stylelint-config-standard-scss",
+		"stylelint-config-recess-order"
+	],
+	"rules": {
+		"selector-class-pattern": [
+			"^([a-z][a-z0-9]*)(_[a-z0-9]+)*$",
+			{ "resolveNestedSelectors": true }
+		],
+		"no-descending-specificity": [
+			false,
+			{ "ignore": ["selectors-within-list"] }
+		],
+		"color-hex-length": "long"
+	}
+}

@@ -12,7 +12,6 @@ const newer = require("gulp-newer")
 const cleanCSS = require("gulp-clean-css")
 const webp = require("gulp-webp")
 const ttf2woff = require("gulp-ttf2woff")
-const ttf2woff2 = require("gulp-ttf2woff2")
 const sass = require('gulp-sass')(require('sass'));
 
 const paths = {
@@ -119,13 +118,6 @@ function fontsWoff() {
         .pipe(browserSync.stream())
 }
 
-function fontsWoff2() {
-    return gulp.src(paths.fonts.src)
-        .pipe(ttf2woff2())
-        .pipe(gulp.dest(paths.fonts.dist))
-        .pipe(browserSync.stream())
-}
-
 function watch() {
     browserSync.init({
         server: {
@@ -143,18 +135,17 @@ function watch() {
     gulp.watch(paths.images.svg, sprite)
     gulp.watch(paths.video.src, video)
     gulp.watch(paths.fonts.src, fontsWoff)
-    gulp.watch(paths.fonts.src, fontsWoff2)
 }
 
 exports.build = gulp.series(
-    clean,  html, gulp.parallel(
-        styles, scripts, images, sprite, fontsWoff, fontsWoff2, video
+    clean, html, gulp.parallel(
+        styles, scripts, images, sprite, fontsWoff, video
     )
 )
 
 
 exports.server = gulp.series(
     clean, html, gulp.parallel(
-        styles, scripts, images, sprite, fontsWoff, fontsWoff2, video
+        styles, scripts, images, sprite, fontsWoff, video
     ), watch
 )
