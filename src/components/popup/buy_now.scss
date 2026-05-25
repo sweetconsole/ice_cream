@@ -1,148 +1,147 @@
 @use "../../style/variables";
 
 .popup__buy_now {
-    width: 568px;
-    height: 644px;
-    
-    @media (max-width: 704px) {
-        width: 280px;
-        height: 986px;
-        margin-top: 150px;
-    }
+	width: 568px;
+	height: 644px;
+
+	@media (width <= 704px) {
+		width: 280px;
+		height: 986px;
+		margin-top: 150px;
+	}
 }
 
 .popup__buy_now_title {
-    margin-bottom: 32px;
+	margin-bottom: 32px;
 }
 
 .popup__buy_now_products {
-    width: 460px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 460px;
 
-    @media (max-width: 704px) {
-        width: 132px;
-        flex-direction: column;
-    }
+	@media (width <= 704px) {
+		flex-direction: column;
+		width: 132px;
+	}
 }
 
 .popup__buy_now_product {
-    width: 132px;
-    height: 198px;
-    position: relative;
+	position: relative;
+	width: 132px;
+	height: 198px;
 
-    @media (max-width: 704px) {
-        margin-bottom: 20px;
-    }
+	@media (width <= 704px) {
+		margin-bottom: 20px;
+	}
 }
 
 .popup__buy_now_product_block_image {
-    width: 132px;
-    height: 132px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 2;
+	width: 132px;
+	height: 132px;
 }
 
 .popup__buy_now_product_image {
-    width: 132px;
-    height: 132px;
-    border-radius: 100%;
+	width: 132px;
+	height: 132px;
+	border-radius: 100%;
 }
 
 .popup__buy_now_product_image_background {
-    width: 132px;
-    height: 132px;
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    border-radius: 100%;
+	position: absolute;
+	right: 0;
+	bottom: -8px;
+	left: 0;
+	z-index: -1;
+	width: 132px;
+	height: 132px;
+	border-radius: 100%;
 }
 
 .popup__buy_now_product_image_background-green {
-    background-color: #96AF8C;
-    box-shadow: 0 5px 20px 0 rgba(10, 136, 23, 0.25);
+	background-color: #96AF8C;
+	box-shadow: 0 5px 20px 0 rgb(10 136 23 / 25%);
 }
 
 .popup__buy_now_product_image_background-yellow {
-    background-color: #EFD478;
-    box-shadow: 0 5px 20px 0 rgba(143, 114, 23, 0.25);
+	background-color: #EFD478;
+	box-shadow: 0 5px 20px 0 rgb(143 114 23 / 25%);
 }
 
 .popup__buy_now_product_image_background-pink {
-    background-color: #D6936D;
-    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.25);
+	background-color: #D6936D;
+	box-shadow: 0 5px 20px 0 rgb(0 0 0 / 25%);
 }
 
 .popup__buy_now_product_block {
-    height: 135px;
-    border-radius: 16px;
-    margin-top: 63px;
-    position: relative;
-    z-index: 1;
-    border: 3px solid;
-    cursor: pointer;
+	position: relative;
+	z-index: 1;
+	height: 135px;
+	margin-top: 63px;
+	cursor: pointer;
+	border: 3px solid;
+	border-radius: 16px;
 }
 
 .popup__buy_now_product_block-green {
-    border-color: #96AF8C;
+	border-color: #96AF8C;
 }
 
 .popup__buy_now_product_block-yellow {
-    border-color: #EFD478;
+	border-color: #EFD478;
 }
 
 .popup__buy_now_product_block-pink {
-    border-color: #D6936D;
+	border-color: #D6936D;
 }
 
-.popup__buy_now_product_block-green-active  {
-    background-color: #96AF8C;
+.popup__buy_now_product_block-green-active {
+	background-color: #96AF8C;
 }
 
-.popup__buy_now_product_block-yellow-active  {
-    background-color: #EFD478;
+.popup__buy_now_product_block-yellow-active {
+	background-color: #EFD478;
 }
 
 .popup__buy_now_product_block-pink-active {
-    background-color: #D6936D;
+	background-color: #D6936D;
 }
 
 .popup__buy_now_product_name {
-    position: absolute;
-    bottom: 18px;
-    left: 0;
-    right: 0;
-
-    font-weight: variables.$bold;
-    color: variables.$color-text-dark;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    text-align: center;
+	position: absolute;
+	right: 0;
+	bottom: 12px;
+	left: 0;
+	font-size: 13px;
+	font-weight: variables.$bold;
+	line-height: 17px;
+	color: variables.$color-text-dark;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
 }
 
 .popup__buy_now_form {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 40px;
 
-    @media (max-width: 704px) {
-        margin-top: 0;
-    }
+	@media (width <= 704px) {
+		margin-top: 0;
+	}
 }
 
 .popup_buy_now_input {
-    margin-bottom: 16px;
+	margin-bottom: 16px;
 }
 
 .popup__buy_now_button {
-    margin: 32px auto 0;
+	margin: 32px auto 0;
 }

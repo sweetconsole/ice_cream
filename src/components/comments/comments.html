@@ -1,19 +1,87 @@
 <div class="comments">
-    <div class="comments__image" id="commentsImage"></div>
+	<div class="swiper comments_images" id="photoSwiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img
+					class="comments_image"
+					src="./image/comments_1.webp"
+					alt="Обложка"
+				/>
+			</div>
+			<div class="swiper-slide">
+				<img
+					class="comments_image"
+					src="./image/comments_2.webp"
+					alt="Обложка"
+				/>
+			</div>
+			<div class="swiper-slide">
+				<img
+					class="comments_image"
+					src="./image/comments_3.webp"
+					alt="Обложка"
+				/>
+			</div>
+		</div>
+	</div>
 
-    <div class="comment">
-        <img class="comment__photo" id="commentPhoto" src="./image/comments_author_1.webp" alt="Avatar Image" loading="lazy">
+	<div class="swiper comments_swiper" id="commentsSwiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide comment">
+				<img
+					class="comment__photo"
+					src="./image/comments_author_3.webp"
+					alt="Фотография автора отзыва"
+					loading="lazy"
+				/>
 
-        <div class="comment__block_text">
-            <p class="comment__text" id="commentText">Every day we come to you with friends after classes in college. We love your ice cream and casual atmosphere!</p>
-        </div>
+				<div class="comment__block_text">
+					<p class="comment__text">
+						В жару лучше всего спасаюсь фруктовым льдом. У вас он всегда безумно
+						вкусный. Рекомендую ваше кафе всем знакомым!
+					</p>
+				</div>
 
-        <p class="comment__author" id="commentAuthor">Bryan, New-York</p>
+				<p class="comment__author">Елена, Казань</p>
+			</div>
 
-        <div class="comments__count" id="commentsCounter">
-            <div class="comments__count_circle comments__count_circle-active" onclick="changeComment(0, this)"></div>
-            <div class="comments__count_circle" onclick="changeComment(1, this)"></div>
-            <div class="comments__count_circle" onclick="changeComment(2, this)"></div>
-        </div>
-    </div>
+			<div class="swiper-slide comment">
+				<img
+					class="comment__photo"
+					src="./image/comments_author_1.webp"
+					alt="Фотография автора отзыва"
+					loading="lazy"
+				/>
+
+				<div class="comment__block_text">
+					<p class="comment__text">
+						Мороженое — моя страсть! Обожаю ваш шоколадно-ореховый пломбир. И
+						отдельное спасибо за сервис — всегда вежливо и очень быстро!
+					</p>
+				</div>
+
+				<p class="comment__author">Дмитрий, Санкт-Петербург</p>
+			</div>
+
+			<div class="swiper-slide comment">
+				<img
+					class="comment__photo"
+					src="./image/comments_author_2.webp"
+					alt="Фотография автора отзыва"
+					loading="lazy"
+				/>
+
+				<div class="comment__block_text">
+					<p class="comment__text">
+						Каждый день после универа заходим с друзьями. Обожаем ваше мороженое
+						и уютную атмосферу — как дома!
+					</p>
+				</div>
+
+				<p class="comment__author">Анна, Москва</p>
+			</div>
+		</div>
+
+		<div class="comments__count" id="commentsSwiperPagination"></div>
+	</div>
 </div>

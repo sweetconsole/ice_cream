@@ -1,18 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="only light">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/webp" sizes="96x96" href="./image/favicons/favicon-96x96.webp">
-    <link rel="icon" type="image/webp" sizes="32x32" href="./image/favicons/favicon-32x32.webp">
-    <link rel="icon" type="image/webp" sizes="16x16" href="./image/favicons/favicon-16x16.webp">
-    <title>Магазин мороженого Ice</title>
-    <meta name="description" content="Here you will find a variety of flavors, recipes and cooking tips. Enjoy sweet moments every day!">
-</head>
-<body id="home">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="color-scheme" content="only light" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			rel="icon"
+			type="image/webp"
+			sizes="96x96"
+			href="./image/favicons/favicon-96x96.webp"
+		/>
+		<link
+			rel="icon"
+			type="image/webp"
+			sizes="32x32"
+			href="./image/favicons/favicon-32x32.webp"
+		/>
+		<link
+			rel="icon"
+			type="image/webp"
+			sizes="16x16"
+			href="./image/favicons/favicon-16x16.webp"
+		/>
+		<title>Магазин мороженого Ice</title>
+		<meta
+			name="description"
+			content="Here you will find a variety of flavors, recipes and cooking tips. Enjoy sweet moments every day!"
+		/>
+	</head>
+	<body id="home"></body>
+</html>
+
 
     <div class="popup__background" id="popUpBackground">
         <div class="popup popup__locations" id="popUpLocations">
@@ -114,56 +138,107 @@
 	/>
 </div>
 
-        
-<div class="popup popup__buy_now" id="popUpBuyNow">
-    <p class="popup__title popup__buy_now_title">Buy Now</p>
+        <div class="popup popup__buy_now" id="popUpBuyNow">
+	<p class="popup__title popup__buy_now_title">Быстрый заказ</p>
 
-    <div class="popup__buy_now_products">
-        <div class="popup__buy_now_product">
-            <div class="popup__buy_now_product_block_image">
-                <img class="popup__buy_now_product_image" src="./image/product_icon_1.webp" alt="Image Ice Cream" loading="lazy">
-                <div class="popup__buy_now_product_image_background popup__buy_now_product_image_background-green"></div>
-            </div>
+	<div class="popup__buy_now_products">
+		<div class="popup__buy_now_product">
+			<div class="popup__buy_now_product_block_image">
+				<img
+					class="popup__buy_now_product_image"
+					src="./image/product_icon_1.webp"
+					alt="Image Ice Cream"
+					loading="lazy"
+				/>
+				<div
+					class="popup__buy_now_product_image_background popup__buy_now_product_image_background-green"
+				></div>
+			</div>
 
-            <div class="popup__buy_now_product_block popup__buy_now_product_block-green" onclick="selectProduct('green', this)">
-                <p class="popup__buy_now_product_name">Ice Cream</p>
-            </div>
-        </div>
+			<div
+				class="popup__buy_now_product_block popup__buy_now_product_block-green"
+				onclick="selectProduct('green', this)"
+			>
+				<p class="popup__buy_now_product_name">Шоколадное мороженое</p>
+			</div>
+		</div>
 
-        <div class="popup__buy_now_product">
-            <div class="popup__buy_now_product_block_image">
-                <img class="popup__buy_now_product_image" src="./image/product_icon_2.webp" alt="Image Ice Coffee" loading="lazy">
-                <div class="popup__buy_now_product_image_background popup__buy_now_product_image_background-yellow"></div>
-            </div>
+		<div class="popup__buy_now_product">
+			<div class="popup__buy_now_product_block_image">
+				<img
+					class="popup__buy_now_product_image"
+					src="./image/product_icon_2.webp"
+					alt="Image Ice Coffee"
+					loading="lazy"
+				/>
+				<div
+					class="popup__buy_now_product_image_background popup__buy_now_product_image_background-yellow"
+				></div>
+			</div>
 
-            <div class="popup__buy_now_product_block popup__buy_now_product_block-yellow" onclick="selectProduct('yellow', this)">
-                <p class="popup__buy_now_product_name">Ice Coffee</p>
-            </div>
-        </div>
+			<div
+				class="popup__buy_now_product_block popup__buy_now_product_block-yellow"
+				onclick="selectProduct('yellow', this)"
+			>
+				<p class="popup__buy_now_product_name">Кофе со льдом</p>
+			</div>
+		</div>
 
-        <div class="popup__buy_now_product">
-            <div class="popup__buy_now_product_block_image">
-                <img class="popup__buy_now_product_image" src="./image/product_icon_3.webp" alt="Image Milkshake" loading="lazy">
-                <div class="popup__buy_now_product_image_background popup__buy_now_product_image_background-pink"></div>
-            </div>
+		<div class="popup__buy_now_product">
+			<div class="popup__buy_now_product_block_image">
+				<img
+					class="popup__buy_now_product_image"
+					src="./image/product_icon_3.webp"
+					alt="Image Milkshake"
+					loading="lazy"
+				/>
+				<div
+					class="popup__buy_now_product_image_background popup__buy_now_product_image_background-pink"
+				></div>
+			</div>
 
-            <div class="popup__buy_now_product_block popup__buy_now_product_block-pink" onclick="selectProduct('pink', this)">
-                <p class="popup__buy_now_product_name">Milkshake</p>
-            </div>
-        </div>
-    </div>
+			<div
+				class="popup__buy_now_product_block popup__buy_now_product_block-pink"
+				onclick="selectProduct('pink', this)"
+			>
+				<p class="popup__buy_now_product_name">Молочный коктель</p>
+			</div>
+		</div>
+	</div>
 
-    <form class="popup__buy_now_form">
-        <input class="popup__input popup_buy_now_input" placeholder="Name" type="text" name="name">
-        <input class="popup__input popup_buy_now_input" placeholder="Phone" type="tel" name="phone">
+	<form class="popup__buy_now_form">
+		<input
+			class="popup__input popup_buy_now_input"
+			placeholder="Ваше имя"
+			type="text"
+			name="name"
+		/>
+		<input
+			class="popup__input popup_buy_now_input"
+			placeholder="Ваш номер телефона"
+			type="tel"
+			name="phone"
+		/>
 
-        <textarea class="popup__input popup__textarea" placeholder="Comment"></textarea>
+		<textarea
+			class="popup__input popup__textarea"
+			placeholder="Пожелания к заказу"
+		></textarea>
 
-        <button class="popup__buy_now_button button__fill" type="submit">Submit</button>
-    </form>
+		<button class="popup__buy_now_button button__fill" type="submit">
+			Заказать
+		</button>
+	</form>
 
-    <img class="popup__close" src="./image/close.svg" alt="Close" onclick="viewPopUp('buyNow')" loading="lazy">
+	<img
+		class="popup__close"
+		src="./image/close.svg"
+		alt="Close"
+		onclick="viewPopUp('buyNow')"
+		loading="lazy"
+	/>
 </div>
+
         <div class="popup popup__products" id="popUpProduct">
 	<p class="popup__title popup__products_title" id="popUpProductName"></p>
 
@@ -613,7 +688,7 @@
 						loading="lazy"
 					/>
 				</div>
-				<p class="how__feature_count">16kg</p>
+				<p class="how__feature_count">16 кг</p>
 				<p class="how__feature_description">
 					Доступных ингредиентов снижают себестоимость уникальных позиций
 				</p>
@@ -638,24 +713,93 @@
 </section>
 
         <div class="comments">
-    <div class="comments__image" id="commentsImage"></div>
+	<div class="swiper comments_images" id="photoSwiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img
+					class="comments_image"
+					src="./image/comments_1.webp"
+					alt="Обложка"
+				/>
+			</div>
+			<div class="swiper-slide">
+				<img
+					class="comments_image"
+					src="./image/comments_2.webp"
+					alt="Обложка"
+				/>
+			</div>
+			<div class="swiper-slide">
+				<img
+					class="comments_image"
+					src="./image/comments_3.webp"
+					alt="Обложка"
+				/>
+			</div>
+		</div>
+	</div>
 
-    <div class="comment">
-        <img class="comment__photo" id="commentPhoto" src="./image/comments_author_1.webp" alt="Avatar Image" loading="lazy">
+	<div class="swiper comments_swiper" id="commentsSwiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide comment">
+				<img
+					class="comment__photo"
+					src="./image/comments_author_3.webp"
+					alt="Фотография автора отзыва"
+					loading="lazy"
+				/>
 
-        <div class="comment__block_text">
-            <p class="comment__text" id="commentText">Every day we come to you with friends after classes in college. We love your ice cream and casual atmosphere!</p>
-        </div>
+				<div class="comment__block_text">
+					<p class="comment__text">
+						В жару лучше всего спасаюсь фруктовым льдом. У вас он всегда безумно
+						вкусный. Рекомендую ваше кафе всем знакомым!
+					</p>
+				</div>
 
-        <p class="comment__author" id="commentAuthor">Bryan, New-York</p>
+				<p class="comment__author">Елена, Казань</p>
+			</div>
 
-        <div class="comments__count" id="commentsCounter">
-            <div class="comments__count_circle comments__count_circle-active" onclick="changeComment(0, this)"></div>
-            <div class="comments__count_circle" onclick="changeComment(1, this)"></div>
-            <div class="comments__count_circle" onclick="changeComment(2, this)"></div>
-        </div>
-    </div>
+			<div class="swiper-slide comment">
+				<img
+					class="comment__photo"
+					src="./image/comments_author_1.webp"
+					alt="Фотография автора отзыва"
+					loading="lazy"
+				/>
+
+				<div class="comment__block_text">
+					<p class="comment__text">
+						Мороженое — моя страсть! Обожаю ваш шоколадно-ореховый пломбир. И
+						отдельное спасибо за сервис — всегда вежливо и очень быстро!
+					</p>
+				</div>
+
+				<p class="comment__author">Дмитрий, Санкт-Петербург</p>
+			</div>
+
+			<div class="swiper-slide comment">
+				<img
+					class="comment__photo"
+					src="./image/comments_author_2.webp"
+					alt="Фотография автора отзыва"
+					loading="lazy"
+				/>
+
+				<div class="comment__block_text">
+					<p class="comment__text">
+						Каждый день после универа заходим с друзьями. Обожаем ваше мороженое
+						и уютную атмосферу — как дома!
+					</p>
+				</div>
+
+				<p class="comment__author">Анна, Москва</p>
+			</div>
+		</div>
+
+		<div class="comments__count" id="commentsSwiperPagination"></div>
+	</div>
 </div>
+
         <div class="locations">
 	<div class="container">
 		<div class="locations_list">
@@ -892,7 +1036,7 @@
 
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 <script src="./script.js"></script>
 </body>
 </html>
