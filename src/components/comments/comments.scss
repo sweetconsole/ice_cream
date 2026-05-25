@@ -122,33 +122,7 @@
 	}
 }
 
-.comments__count {
-	display: flex;
-	justify-content: space-between;
+.comments_pagination_container {
 	width: 72px;
-}
-
-.comments__count_circle {
-	position: relative;
-	width: 12px;
-	height: 12px;
-	cursor: pointer;
-	background-color: #D9D9D9;
-	border-radius: 100%;
-	transition: all .3s ease-in-out;
-
-	&::after {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		display: block;
-		width: 24px;
-		height: 24px;
-		content: "";
-		transform: translate(-50%, -50%);
-	}
-}
-
-.comments__count_circle-active {
-	background-color: #84A178;
+	margin: 0 auto;
 }

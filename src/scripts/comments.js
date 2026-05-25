@@ -24,7 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		new Swiper(commentsSwiper, {
 			loop: true,
 			pagination: {
-				el: "commentsSwiperPagination"
+				el: "#commentsSwiperPagination",
+				clickable: true
 			},
 			autoplay: {
 				delay: 15000,

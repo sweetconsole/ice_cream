@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="color-scheme" content="only light" />
+		<meta name="format-detection" content="telephone=no" />
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
@@ -28,11 +29,39 @@
 			sizes="16x16"
 			href="./image/favicons/favicon-16x16.webp"
 		/>
-		<title>Магазин мороженого Ice</title>
+
+		<title>
+			Ice — домашнее мороженое, кофе и коктейли в Москве, СПБ, Казани
+		</title>
 		<meta
 			name="description"
-			content="Here you will find a variety of flavors, recipes and cooking tips. Enjoy sweet moments every day!"
+			content="Натуральное мороженое ручной работы, кофе со льдом и молочные коктейли. 55 вкусов, 15 видов кофе. Доставка и самовывоз. Кафе в Москве, СПБ, Казани."
 		/>
+		<meta
+			name="keywords"
+			content="мороженое, домашнее мороженое, кофе со льдом, молочные коктейли, кафе мороженого, доставка мороженого, натуральное мороженое, пломбир, Москва, Санкт-Петербург, Казань"
+		/>
+		<meta name="author" content="sweetconsole" />
+		<meta name="robots" content="index, follow" />
+		<meta name="yandex" content="index, follow" />
+
+		<meta
+			property="og:title"
+			content="Ice — домашнее мороженое, кофе и коктейли"
+		/>
+		<meta
+			property="og:description"
+			content="Натуральное мороженое ручной работы. 55 вкусов, 15 видов кофе. Кафе в Москве, СПБ, Казани. Доставка и самовывоз."
+		/>
+		<meta property="og:image" content="./image/intro_image_1.webp" />
+		<meta property="og:image:width" content="640" />
+		<meta property="og:image:height" content="664" />
+		<meta
+			property="og:url"
+			content="https://sweetconsole.github.io/ice_cream/dist/"
+		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="ru_RU" />
 	</head>
 	<body id="home"></body>
 </html>
@@ -404,7 +433,11 @@
 				</ul>
 			</nav>
 
-			<button class="header__burger" onclick="viewMenu()">
+			<button
+				class="header__burger"
+				onclick="viewMenu()"
+				aria-label="Открыть меню с навигацией по сайту"
+			>
 				<img class="header__burger_icon" src="./image/burger.svg" alt="Menu" />
 			</button>
 
@@ -719,21 +752,30 @@
 				<img
 					class="comments_image"
 					src="./image/comments_1.webp"
+					loading="lazy"
 					alt="Обложка"
+					width="1000"
+					height="422"
 				/>
 			</div>
 			<div class="swiper-slide">
 				<img
 					class="comments_image"
 					src="./image/comments_2.webp"
+					loading="lazy"
 					alt="Обложка"
+					width="1000"
+					height="422"
 				/>
 			</div>
 			<div class="swiper-slide">
 				<img
 					class="comments_image"
 					src="./image/comments_3.webp"
+					loading="lazy"
 					alt="Обложка"
+					width="1000"
+					height="422"
 				/>
 			</div>
 		</div>
@@ -747,6 +789,8 @@
 					src="./image/comments_author_3.webp"
 					alt="Фотография автора отзыва"
 					loading="lazy"
+					width="100"
+					height="100"
 				/>
 
 				<div class="comment__block_text">
@@ -765,6 +809,8 @@
 					src="./image/comments_author_1.webp"
 					alt="Фотография автора отзыва"
 					loading="lazy"
+					width="100"
+					height="100"
 				/>
 
 				<div class="comment__block_text">
@@ -783,6 +829,8 @@
 					src="./image/comments_author_2.webp"
 					alt="Фотография автора отзыва"
 					loading="lazy"
+					width="100"
+					height="100"
 				/>
 
 				<div class="comment__block_text">
@@ -796,7 +844,9 @@
 			</div>
 		</div>
 
-		<div class="comments__count" id="commentsSwiperPagination"></div>
+		<div class="comments_pagination_container">
+			<div class="comments_pagination" id="commentsSwiperPagination"></div>
+		</div>
 	</div>
 </div>
 

@@ -62,6 +62,16 @@ button {
     }
 }
 
+.swiper {
+    --swiper-pagination-bullet-width: 12px;
+    --swiper-pagination-bullet-height: 12px;
+    --swiper-pagination-bullet-border-radius: 50%;
+    --swiper-pagination-color: #84A178;
+    --swiper-pagination-bullet-inactive-color: #D9D9D9;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bottom: 24px;
+}
+
 .top_heading {
     margin-bottom: 12px;
     font-size: 30px;
